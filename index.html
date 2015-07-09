@@ -1,37 +1,154 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>fupuchu!</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {{ post.content }}
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="sectionone">
+  <div class="container">
+    <div class="row">
+      <div class="one-half column" style="margin-top: 15%">
+        <div class="sectiononeinfo">
+          <h2>fupuchu</h2>
+        </div>
+      </div>
+    </div>
   </div>
-  {% endfor %}
 </div>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="/page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="/">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
+<br />
+
+<div class="container">
+    <!-- columns should be the immediate child of a .row -->
+  <div class="row">
+    <div class="five columns">
+      <div class="">
+        <h4>About Me</h4>
+          <p>This is a website about me, what I have done over the years and some of the works I've done.</p>
+          <p>fupuchu! A name that is randomly thought of after looking around a room and then subsequently not using any sort of references. fupuchu can also mean "cannot pay" in Simplified Chinese.</p>
+            <ul>
+              <li>Product1</li>
+              <li>Product2</li>
+              <li>Product3</li>
+              <li>Product4</li>
+              <li>Product5</li>
+            </ul>
+      </div>
+    </div>
+  </div>
 </div>
+
+<div class="sectiontwo">
+  <div class="container">
+    <div class="one-half column" style="margin-bottom: 10%; margin-top: 10%">
+      <div class="sectiontwoinfo">
+        <h4>Running Quest</h4>
+        <p>An app idea to get gamers out to work out and stay healthy. Beneficial to them in the long run! Running quest bases on the idea that the user "runs" to finish a quest. Leaderboards and Time-Attack scenarios are currently planned and ultimately, I would want the user to create quests themselves and challenge other "QuestRunners" to finish it! Be it a mile or 10 miles, progress at your pace and become the ultimate runner and in the process become fit!</p>
+        <a class="button button-primary" href="http://twitter.com/fupuchu">Click here to find out more!</a>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="column" style="margin-top: 15%; margin-bottom: 15%">
+    <div class="section values">
+    <div class="container">
+      <div class="row">
+        <div class="one-third column value">
+          <h2>Portfolio #1</h2>
+          <h5 class="value-heading">P.Desc #1</h5>
+            <ul>
+              Built With
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>$FrameWork</li>
+            </ul>
+        </div>
+        <div class="one-third column value">
+          <h2>Portfolio #2</h2>
+          <h5 class="value-heading">P.Desc #2</h5>
+            <ul>
+              Built With
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>$FrameWork</li>
+            </ul>
+        </div>
+        <div class="one-third column value">
+          <h2>Portfolio #3</h2>
+          <h5 class="value-heading">P.Desc #3</h5>
+            <ul>
+              Built With
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>$FrameWork</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- footer -->
+<footer>
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="two columns">
+        <h4>Social</h4>
+        <ul>
+          <li>Twitter</li>
+          <li>Facebook</li>
+          <li>GitHub</li>
+        </ul>
+      </div>
+      <div class="three columns">
+        <h4>Other Works</h4>
+        <ul>
+          <li>Relevant Work #1</li>
+          <li>Relevant Work #2</li>
+          <li>Relevant Work #3</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h4>Contact</h4>
+        <p>You can reach me via Email<br />I will respond to you as soon as I can.</p>
+      </div>
+    </div>
+  </div>
+</div> 
+</footer>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
